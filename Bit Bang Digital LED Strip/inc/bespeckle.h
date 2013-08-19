@@ -2,6 +2,7 @@
 #define __BESPECKLE_H__
 
 #include <stdint.h>
+#include "led_strip_driver.h"
 
 #define RGBA_R_SHIFT 5
 #define RGBA_R_MASK  (0x1f << RGBA_R_SHIFT) // 5 bits
@@ -26,7 +27,7 @@
 
 // Length of LED strip
 // sizeof(position_t) > STRIP_LENGTH
-#define STRIP_LENGTH 1
+//#define STRIP_LENGTH 1
 
 // Default color with no effects (black)
 #define RGB_EMPTY    0x8000
